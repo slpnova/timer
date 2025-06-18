@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Zamanlayıcı & Görevler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+    <div class="icon-container" title="Merhaba ben Nova">
+        <img src="https://i.pinimg.com/originals/c0/d7/c0/c0d7c0e512173ca944133240fcf5816d.gif" alt="Nova Animasyonlu Icon">
+    </div>
+
+    <div class="container">
+        <div class="pomodoro-header">
+            <h1>Nova Timer</h1>
+            <div class="timer-mode-buttons">
+                <button id="pomodoro-btn" class="active">Pomodoro</button>
+                <button id="short-break-btn">Short timer</button>
+                <button id="long-break-btn">Long Timer</button>
+            </div>
+            <div class="timer-display">
+                <span id="display-minutes">25</span>:<span id="display-seconds">00</span>
+            </div>
+            <div class="timer-controls">
+                <button id="start-btn" class="start">START</button>
+                <button id="reset-btn" class="reset">RESET</button>
+            </div>
+        </div>
+
+        <hr class="separator">
+
+        <div class="tasks-section">
+            <h2>Tasks</h2>
+            <div class="task-input-group">
+                <input type="text" id="new-task-input" placeholder="Enter a new task" maxlength="100">
+                <button id="add-task-btn">Add</button>
+            </div>
+            <p class="char-count"><span id="current-char-count">0</span>/50 characters</p>
+            <ul id="task-list" class="task-list">
+                </ul>
+            <p id="no-tasks-message" class="no-tasks-message">Enter a task to do!</p>
+        </div>
+    </div>
+
+    <script src="timer.js"></script>
+</body>
+</html>
